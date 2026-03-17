@@ -1,0 +1,25 @@
+{
+	"name": "ds_curated_genomics_variants",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_adls_gdpdemo",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "variants_SMP001.vcf",
+				"folderPath": "genomics/variants",
+				"fileSystem": "curated"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": false,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

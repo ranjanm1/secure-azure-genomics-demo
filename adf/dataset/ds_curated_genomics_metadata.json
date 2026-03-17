@@ -1,0 +1,21 @@
+{
+	"name": "ds_curated_genomics_metadata",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_adls_gdpdemo",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "run-metadata.json",
+				"folderPath": "genomics/metadata",
+				"fileSystem": "curated"
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

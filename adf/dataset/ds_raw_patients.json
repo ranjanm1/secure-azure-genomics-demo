@@ -1,0 +1,54 @@
+{
+	"name": "ds_raw_patients",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_adls_gdpdemo",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "patients.csv",
+				"folderPath": "clinical/incoming",
+				"fileSystem": "raw"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "patient_id",
+				"type": "String"
+			},
+			{
+				"name": "nhs_number",
+				"type": "String"
+			},
+			{
+				"name": "age",
+				"type": "String"
+			},
+			{
+				"name": "sex",
+				"type": "String"
+			},
+			{
+				"name": "site_code",
+				"type": "String"
+			},
+			{
+				"name": "diagnosis_code",
+				"type": "String"
+			},
+			{
+				"name": "sample_id",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

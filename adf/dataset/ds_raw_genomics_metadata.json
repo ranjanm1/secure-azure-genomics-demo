@@ -1,0 +1,43 @@
+{
+	"name": "ds_raw_genomics_metadata",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_adls_gdpdemo",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "run-metadata.json",
+				"folderPath": "genomics/incoming",
+				"fileSystem": "raw"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"run_id": {
+					"type": "string"
+				},
+				"sample_id": {
+					"type": "string"
+				},
+				"instrument": {
+					"type": "string"
+				},
+				"read_length": {
+					"type": "integer"
+				},
+				"pipeline_version": {
+					"type": "string"
+				},
+				"vcf_file": {
+					"type": "string"
+				}
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

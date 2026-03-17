@@ -1,0 +1,9 @@
+{
+	"name": "adf-gdpdemo-dev",
+	"location": "uksouth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "c9cdc01c-efa2-464f-81f5-63ac9e29ab8e",
+		"tenantId": "9538fb1d-6d4c-4145-ae6b-9cc2a6880e88"
+	}
+}
