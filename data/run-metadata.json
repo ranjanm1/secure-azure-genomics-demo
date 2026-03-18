@@ -1,0 +1,8 @@
+{
+  "run_id": "RUN20260306A",
+  "sample_id": "SMP001",
+  "instrument": "NovaSeq6000",
+  "read_length": 150,
+  "pipeline_version": "v1.0",
+  "vcf_file": "variants_SMP001.vcf"
+}

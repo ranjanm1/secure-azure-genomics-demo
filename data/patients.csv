@@ -1,0 +1,4 @@
+patient_id,nhs_number,age,sex,site_code,diagnosis_code,sample_id
+P1001,9000000011,42,F,GUY,D123,SMP001
+P1002,9000000012,57,M,KCH,D456,SMP002
+P1003,9000000013,36,F,GSTT,D789,SMP003
